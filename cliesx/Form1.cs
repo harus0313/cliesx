@@ -409,7 +409,7 @@ namespace cliesx
 
 
         }
-
+         
         private void CmdComboBox_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
