@@ -190,7 +190,7 @@ namespace cliesx
                     break;
 
                 //DisplayGridLinesOff 枠線（目盛線）を非表示にする
-                case "DsiplayGridLinesOff":
+                case "DisplayGridLinesOff":
                     ThisAddIn.DisplayGridLines(false); break;
                 //DisplayGridLinesOn 枠線（目盛線）を表示する
                 case "DisplayGridLinesOn":
