@@ -34,9 +34,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ribbon1));
             this.tab1 = this.Factory.CreateRibbonTab();
             this.group1 = this.Factory.CreateRibbonGroup();
-            this.button1 = this.Factory.CreateRibbonButton();
+            this.button = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
             this.group1.SuspendLayout();
             this.SuspendLayout();
@@ -50,15 +51,18 @@
             // 
             // group1
             // 
-            this.group1.Items.Add(this.button1);
+            this.group1.Items.Add(this.button);
             this.group1.Label = "cliesx";
             this.group1.Name = "group1";
             // 
-            // button1
+            // button
             // 
-            this.button1.Label = "button1(&K)";
-            this.button1.Name = "button1";
-            this.button1.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button1_Click);
+            this.button.Description = "cliesを開く";
+            this.button.Image = ((System.Drawing.Image)(resources.GetObject("button.Image")));
+            this.button.Label = "cliesを開く";
+            this.button.Name = "button";
+            this.button.ShowImage = true;
+            this.button.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button1_Click);
             // 
             // Ribbon1
             // 
@@ -78,7 +82,7 @@
 
         internal Microsoft.Office.Tools.Ribbon.RibbonTab tab1;
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup group1;
-        internal Microsoft.Office.Tools.Ribbon.RibbonButton button1;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton button;
     }
 
     partial class ThisRibbonCollection
