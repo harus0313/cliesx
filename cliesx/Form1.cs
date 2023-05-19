@@ -404,7 +404,7 @@ namespace cliesx
 
             foreach (var item in cmds)
             {
-                CmdComboBox.Items.Add(item.cmdStr);
+                CmdComboBox.Items.Add(item.cmdStr + " - " + item.cmdDescription);
             }
 
 
@@ -414,7 +414,7 @@ namespace cliesx
         {
             if (e.KeyCode == Keys.Enter)
             {
-                parseCmd(CmdComboBox.Text);
+                parseCmd(CmdComboBox.Text.Split('-')[0].Trim());
             }
 
         }

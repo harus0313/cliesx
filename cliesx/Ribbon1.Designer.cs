@@ -59,6 +59,7 @@
             // 
             this.button.Description = "cliesを開く";
             this.button.Image = ((System.Drawing.Image)(resources.GetObject("button.Image")));
+            this.button.ImageName = "cliesを開く";
             this.button.Label = "cliesを開く";
             this.button.Name = "button";
             this.button.ShowImage = true;
