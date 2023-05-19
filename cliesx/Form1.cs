@@ -326,7 +326,7 @@ namespace cliesx
             cmds.Add(cmdInfo);
 
             cmdInfo = new CmdInfo();
-            cmdInfo.cmdStr = "DsiplayGridLinesOff";
+            cmdInfo.cmdStr = "DisplayGridLinesOff";
             cmdInfo.cmdDescription = "メモリ線を非表示にします。";
             cmds.Add(cmdInfo);
 
@@ -423,8 +423,11 @@ namespace cliesx
         {
             foreach (var item in cmds)
             {
-                if (item.cmdStr == CmdComboBox.Text) cmdDescLabel.Text = item.cmdDescription;
-                return;
+                if (item.cmdStr.ToLower() == CmdComboBox.Text.ToLower())
+                {
+                    cmdDescLabel.Text = item.cmdDescription;
+                    return;
+                }
             }
 
             cmdDescLabel.Text = "コマンドを選択してください";
