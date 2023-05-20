@@ -144,9 +144,6 @@ namespace cliesx
                     Form webviewForm = new WebViewForm();
                     webviewForm.Show();
                     break;
-                //AddIcon
-                // オープンソースのアイコンを表示する
-                // オープンソースのアイコンを貼り付ける
 
                 //AddTemplateSheet テンプレートからシートを追加する
                 //SaveAsTemplateSheetテンプレートシートとして保存する
