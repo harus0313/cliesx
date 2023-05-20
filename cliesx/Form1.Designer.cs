@@ -69,7 +69,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(353, 455);
+            this.ClientSize = new System.Drawing.Size(353, 110);
             this.Controls.Add(this.cmdDescLabel);
             this.Controls.Add(this.CmdComboBox);
             this.Name = "cliesx";

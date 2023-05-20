@@ -138,7 +138,12 @@ namespace cliesx
                     ThisAddIn.CopySheet();
                     break;
 
+
                 //AddImage 画像を挿入する
+                case "AddIcon":
+                    Form webviewForm = new WebViewForm();
+                    webviewForm.Show();
+                    break;
                 //AddIcon
                 // オープンソースのアイコンを表示する
                 // オープンソースのアイコンを貼り付ける
@@ -395,6 +400,10 @@ namespace cliesx
             cmdInfo.cmdDescription = "ブックの読み取り専用を解除します。";
             cmds.Add(cmdInfo);
 
+            cmdInfo = new CmdInfo();
+            cmdInfo.cmdStr = "AddIcon";
+            cmdInfo.cmdDescription = "アイコン一覧を表示します。コピー＆ペーストでExcelシートに貼り付けできます。";
+            cmds.Add(cmdInfo);
 
         }
 
