@@ -44,7 +44,7 @@
             this.CmdComboBox.FormattingEnabled = true;
             this.CmdComboBox.Location = new System.Drawing.Point(12, 56);
             this.CmdComboBox.Name = "CmdComboBox";
-            this.CmdComboBox.Size = new System.Drawing.Size(329, 21);
+            this.CmdComboBox.Size = new System.Drawing.Size(530, 21);
             this.CmdComboBox.Sorted = true;
             this.CmdComboBox.TabIndex = 1;
             this.CmdComboBox.SelectedValueChanged += new System.EventHandler(this.CmdComboBox_SelectedValueChanged);
@@ -71,7 +71,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(353, 110);
+            this.ClientSize = new System.Drawing.Size(554, 125);
             this.Controls.Add(this.cmdDescLabel);
             this.Controls.Add(this.CmdComboBox);
             this.Name = "cliesx";
