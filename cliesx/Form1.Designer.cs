@@ -37,12 +37,14 @@
             // 
             // CmdComboBox
             // 
+            this.CmdComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.CmdComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.CmdComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.CmdComboBox.FormattingEnabled = true;
             this.CmdComboBox.Location = new System.Drawing.Point(12, 56);
             this.CmdComboBox.Name = "CmdComboBox";
-            this.CmdComboBox.Size = new System.Drawing.Size(323, 21);
+            this.CmdComboBox.Size = new System.Drawing.Size(329, 21);
             this.CmdComboBox.Sorted = true;
             this.CmdComboBox.TabIndex = 1;
             this.CmdComboBox.SelectedValueChanged += new System.EventHandler(this.CmdComboBox_SelectedValueChanged);
