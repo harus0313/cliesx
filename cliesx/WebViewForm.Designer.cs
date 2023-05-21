@@ -54,7 +54,7 @@
             this.ClientSize = new System.Drawing.Size(704, 665);
             this.Controls.Add(this.webView21);
             this.Name = "WebViewForm";
-            this.Text = "WebViewForm";
+            this.Text = "AddIcon";
             ((System.ComponentModel.ISupportInitialize)(this.webView21)).EndInit();
             this.ResumeLayout(false);
 
