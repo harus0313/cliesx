@@ -154,6 +154,16 @@ namespace cliesx
             Globals.ThisAddIn.Application.DisplayFullScreen = displayFlag;
         }
 
+        public static void ShowDialog(Microsoft.Office.Interop.Excel.XlBuiltInDialog dialogCode)
+        {
+            Globals.ThisAddIn.Application.Dialogs[dialogCode].Show(
+                Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing,
+                Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing,
+                Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing,
+                Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
+
+        }
+
 
 
         #region VSTO generated code

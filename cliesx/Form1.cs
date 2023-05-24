@@ -213,7 +213,17 @@ namespace cliesx
                     ThisAddIn.DisplayFullScreen(false); break;
                 case "DisplayFullScreenOn":
                     ThisAddIn.DisplayFullScreen(true); break;
+                case "ShowDialogSort":
+                    ThisAddIn.ShowDialog(Microsoft.Office.Interop.Excel.XlBuiltInDialog.xlDialogSort);
+                    break;
+                case "ShowDialogFont":
+                    ThisAddIn.ShowDialog(Microsoft.Office.Interop.Excel.XlBuiltInDialog.xlDialogFont); break;
 
+                case "ShowDialogPrintPreview":
+                    ThisAddIn.ShowDialog(Microsoft.Office.Interop.Excel.XlBuiltInDialog.xlDialogPrintPreview);
+                    break;
+
+                //pdf形式に変換する
                 //xlsm形式に変換する
 
                     // VBAコードを自動生成する
@@ -400,6 +410,11 @@ namespace cliesx
             cmdInfo = new CmdInfo();
             cmdInfo.cmdStr = "AddIcon";
             cmdInfo.cmdDescription = "アイコン一覧を表示します。コピー＆ペーストでExcelシートに貼り付けできます。";
+            cmds.Add(cmdInfo);
+
+            cmdInfo = new CmdInfo();
+            cmdInfo.cmdStr = "ShowDialogSort";
+            cmdInfo.cmdDescription = "並び替えダイアログを表示します。";
             cmds.Add(cmdInfo);
 
         }
