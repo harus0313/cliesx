@@ -223,6 +223,14 @@ namespace cliesx
                     ThisAddIn.ShowDialog(Microsoft.Office.Interop.Excel.XlBuiltInDialog.xlDialogPrintPreview);
                     break;
 
+                case "ShowDialogFileSharing":
+                    ThisAddIn.ShowDialog(Microsoft.Office.Interop.Excel.XlBuiltInDialog.xlDialogFileSharing);
+                    break;
+
+                case "ShowDialogProtectSharing":
+                    ThisAddIn.ShowDialog(Microsoft.Office.Interop.Excel.XlBuiltInDialog.xlDialogProtectSharing);
+                    break;
+
                 //pdf形式に変換する
                 //xlsm形式に変換する
 
@@ -416,6 +424,13 @@ namespace cliesx
             cmdInfo.cmdStr = "ShowDialogSort";
             cmdInfo.cmdDescription = "並び替えダイアログを表示します。";
             cmds.Add(cmdInfo);
+
+            cmdInfo = new CmdInfo();
+            cmdInfo.cmdStr = "ShowDialogFont";
+            cmdInfo.cmdDescription = "フォント設定ダイアログを表示します。";
+            cmds.Add(cmdInfo);
+
+
 
         }
 
