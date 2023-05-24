@@ -430,7 +430,20 @@ namespace cliesx
             cmdInfo.cmdDescription = "フォント設定ダイアログを表示します。";
             cmds.Add(cmdInfo);
 
+            cmdInfo = new CmdInfo();
+            cmdInfo.cmdStr = "ShowDialogPrintPreview";
+            cmdInfo.cmdDescription = "印刷プレビューダイアログを表示します。";
+            cmds.Add(cmdInfo);
 
+            cmdInfo = new CmdInfo();
+            cmdInfo.cmdStr = "ShowDialogFileSharing";
+            cmdInfo.cmdDescription = "ブックの共有ダイアログを表示します。";
+            cmds.Add(cmdInfo);
+
+            cmdInfo = new CmdInfo();
+            cmdInfo.cmdStr = "ShowDialogProtectSharing";
+            cmdInfo.cmdDescription = "共有ブックの保護ダイアログを表示します。";
+            cmds.Add(cmdInfo);
 
         }
 
