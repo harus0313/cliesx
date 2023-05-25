@@ -33,6 +33,8 @@
             this.CmdComboBox = new System.Windows.Forms.ComboBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.cmdDescLabel = new System.Windows.Forms.Label();
+            this.execButton = new System.Windows.Forms.Button();
+            this.ErrorDescLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // CmdComboBox
@@ -44,7 +46,7 @@
             this.CmdComboBox.FormattingEnabled = true;
             this.CmdComboBox.Location = new System.Drawing.Point(12, 56);
             this.CmdComboBox.Name = "CmdComboBox";
-            this.CmdComboBox.Size = new System.Drawing.Size(530, 21);
+            this.CmdComboBox.Size = new System.Drawing.Size(449, 21);
             this.CmdComboBox.Sorted = true;
             this.CmdComboBox.TabIndex = 1;
             this.CmdComboBox.SelectedValueChanged += new System.EventHandler(this.CmdComboBox_SelectedValueChanged);
@@ -67,11 +69,32 @@
             this.cmdDescLabel.TabIndex = 2;
             this.cmdDescLabel.Text = "コマンドを選択してください";
             // 
+            // execButton
+            // 
+            this.execButton.Location = new System.Drawing.Point(468, 55);
+            this.execButton.Name = "execButton";
+            this.execButton.Size = new System.Drawing.Size(75, 23);
+            this.execButton.TabIndex = 3;
+            this.execButton.Text = "実行";
+            this.execButton.UseVisualStyleBackColor = true;
+            this.execButton.Click += new System.EventHandler(this.execButton_Click);
+            // 
+            // ErrorDescLabel
+            // 
+            this.ErrorDescLabel.AutoSize = true;
+            this.ErrorDescLabel.Location = new System.Drawing.Point(9, 103);
+            this.ErrorDescLabel.Name = "ErrorDescLabel";
+            this.ErrorDescLabel.Size = new System.Drawing.Size(35, 13);
+            this.ErrorDescLabel.TabIndex = 4;
+            this.ErrorDescLabel.Text = "label1";
+            // 
             // cliesx
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(554, 125);
+            this.ClientSize = new System.Drawing.Size(554, 151);
+            this.Controls.Add(this.ErrorDescLabel);
+            this.Controls.Add(this.execButton);
             this.Controls.Add(this.cmdDescLabel);
             this.Controls.Add(this.CmdComboBox);
             this.Name = "cliesx";
@@ -87,5 +110,7 @@
         private System.Windows.Forms.ComboBox CmdComboBox;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Label cmdDescLabel;
+        private System.Windows.Forms.Button execButton;
+        private System.Windows.Forms.Label ErrorDescLabel;
     }
 }

@@ -450,6 +450,7 @@ namespace cliesx
         private void cliesx_Load(object sender, EventArgs e)
         {
             AddCmdInfo();
+            ErrorDescLabel.Text = "";
 
             foreach (var item in cmds)
             {
@@ -463,7 +464,7 @@ namespace cliesx
         {
             if (e.KeyCode == Keys.Enter)
             {
-                parseCmd(CmdComboBox.Text.Split('-')[0].Trim());
+                execCommand();
             }
 
         }
@@ -487,6 +488,24 @@ namespace cliesx
             var svgDocument = Svg.SvgDocument.Open("C:\\Users\\Administrator\\OneDrive\\source\\repos\\cliesx\\svg\\500px.svg");
             var bitmap = svgDocument.Draw();
             bitmap.Save("C:\\Users\\Administrator\\OneDrive\\source\\repos\\cliesx\\png\\500px.png", System.Drawing.Imaging.ImageFormat.Png);
+        }
+
+        private void execButton_Click(object sender, EventArgs e)
+        {
+            execCommand();
+        }
+
+        private void execCommand()
+        {
+            try
+            {
+                parseCmd(CmdComboBox.Text.Split('-')[0].Trim());
+                this.Dispose(true);
+            }catch(Exception ex)
+            {
+                ErrorDescLabel.Text = ex.Message;
+            }
+
         }
 
         //TODO: 検索機能を追加する。日本語文で機能を検索できるようにする。
