@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Svg;
+using System.Runtime.InteropServices;
 
 namespace cliesx
 {
@@ -450,7 +451,6 @@ namespace cliesx
         private void cliesx_Load(object sender, EventArgs e)
         {
             AddCmdInfo();
-            ErrorDescLabel.Text = "";
 
             foreach (var item in cmds)
             {
@@ -467,20 +467,6 @@ namespace cliesx
                 execCommand();
             }
 
-        }
-
-        private void CmdComboBox_SelectedValueChanged(object sender, EventArgs e)
-        {
-            foreach (var item in cmds)
-            {
-                if (item.cmdStr.ToLower() == CmdComboBox.Text.ToLower())
-                {
-                    cmdDescLabel.Text = item.cmdDescription;
-                    return;
-                }
-            }
-
-            cmdDescLabel.Text = "コマンドを選択してください";
         }
 
         private void convertSVGtoPNG()
@@ -503,7 +489,7 @@ namespace cliesx
                 this.Dispose(true);
             }catch(Exception ex)
             {
-                ErrorDescLabel.Text = ex.Message;
+                MessageBox.Show(ex.Message, "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }

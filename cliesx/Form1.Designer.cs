@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(cliesx));
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.CmdComboBox = new System.Windows.Forms.ComboBox();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.cmdDescLabel = new System.Windows.Forms.Label();
             this.execButton = new System.Windows.Forms.Button();
-            this.ErrorDescLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // CmdComboBox
@@ -44,59 +42,44 @@
             this.CmdComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.CmdComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.CmdComboBox.FormattingEnabled = true;
-            this.CmdComboBox.Location = new System.Drawing.Point(12, 56);
+            this.CmdComboBox.Location = new System.Drawing.Point(12, 46);
             this.CmdComboBox.Name = "CmdComboBox";
-            this.CmdComboBox.Size = new System.Drawing.Size(449, 21);
+            this.CmdComboBox.Size = new System.Drawing.Size(453, 21);
             this.CmdComboBox.Sorted = true;
             this.CmdComboBox.TabIndex = 1;
-            this.CmdComboBox.SelectedValueChanged += new System.EventHandler(this.CmdComboBox_SelectedValueChanged);
             this.CmdComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CmdComboBox_KeyDown);
-            // 
-            // toolTip1
-            // 
-            this.toolTip1.AutoPopDelay = 5000;
-            this.toolTip1.InitialDelay = 0;
-            this.toolTip1.IsBalloon = true;
-            this.toolTip1.ReshowDelay = 0;
-            this.toolTip1.ShowAlways = true;
             // 
             // cmdDescLabel
             // 
             this.cmdDescLabel.AutoSize = true;
-            this.cmdDescLabel.Location = new System.Drawing.Point(9, 19);
+            this.cmdDescLabel.Location = new System.Drawing.Point(12, 18);
             this.cmdDescLabel.Name = "cmdDescLabel";
-            this.cmdDescLabel.Size = new System.Drawing.Size(126, 13);
+            this.cmdDescLabel.Size = new System.Drawing.Size(178, 13);
             this.cmdDescLabel.TabIndex = 2;
-            this.cmdDescLabel.Text = "コマンドを選択してください";
+            this.cmdDescLabel.Text = "コマンドを入力または選択してください";
             // 
             // execButton
             // 
-            this.execButton.Location = new System.Drawing.Point(468, 55);
+            this.execButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.execButton.Location = new System.Drawing.Point(471, 46);
             this.execButton.Name = "execButton";
-            this.execButton.Size = new System.Drawing.Size(75, 23);
+            this.execButton.Size = new System.Drawing.Size(79, 23);
             this.execButton.TabIndex = 3;
             this.execButton.Text = "実行";
             this.execButton.UseVisualStyleBackColor = true;
             this.execButton.Click += new System.EventHandler(this.execButton_Click);
             // 
-            // ErrorDescLabel
-            // 
-            this.ErrorDescLabel.AutoSize = true;
-            this.ErrorDescLabel.Location = new System.Drawing.Point(9, 103);
-            this.ErrorDescLabel.Name = "ErrorDescLabel";
-            this.ErrorDescLabel.Size = new System.Drawing.Size(35, 13);
-            this.ErrorDescLabel.TabIndex = 4;
-            this.ErrorDescLabel.Text = "label1";
-            // 
             // cliesx
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(554, 151);
-            this.Controls.Add(this.ErrorDescLabel);
+            this.ClientSize = new System.Drawing.Size(558, 89);
             this.Controls.Add(this.execButton);
             this.Controls.Add(this.cmdDescLabel);
             this.Controls.Add(this.CmdComboBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "cliesx";
             this.Text = "cliesx (0.0.1)";
             this.Load += new System.EventHandler(this.cliesx_Load);
@@ -108,9 +91,7 @@
         #endregion
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.ComboBox CmdComboBox;
-        private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Label cmdDescLabel;
         private System.Windows.Forms.Button execButton;
-        private System.Windows.Forms.Label ErrorDescLabel;
     }
 }
