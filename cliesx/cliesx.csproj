@@ -248,6 +248,7 @@
     <EmbeddedResource Include="WebViewForm.resx">
       <DependentUpon>WebViewForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="cliesx_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -288,20 +289,19 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>cliesx_1_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>cliesx_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>48B13BE65CCCAB0095B9193EDDAB97028E2839B1</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>33E6A30BB56AD66E5CFA3234E9FEF289945B0795</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>keyboard_3d.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>
-    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>cliesx_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <!-- Include the build rules for a C# project. -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
