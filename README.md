@@ -2,6 +2,8 @@
 
 cliesはコマンドラインでExcelを操作できるアドインです。VSTOを使って開発しておりc#で記述しています。
 
+# コマンド一覧
+
 現時点で利用可能なコマンドは以下のとおりです。
 
 |コマンド|説明|
@@ -43,3 +45,13 @@ cliesはコマンドラインでExcelを操作できるアドインです。VSTO
 |ShowDialogPrintPreview|印刷プレビューダイアログを表示します。|
 |ShowDialogFileSharing|ブックの共有ダイアログを表示します。|
 |ShowDialogProtectSharing|共有ブックの保護ダイアログを表示します。|
+
+# 使い方
+
+アドインタブから「cliesxを開く」をクリックします。
+
+![](/png/HowToUseCliesx-1.webp)
+
+cliesxウィンドウが開くので、コマンドを選択するか入力し、実行ボタンをクリックします。
+
+![](/png/HowToUseCliesx-2.webp)
